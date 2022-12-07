@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const readStream = fs.createReadStream('./docs/doc2.txt', {encoding: 'utf8'})
-const writeStream = fs.createWriteStream('./docs/doc4.txt')
+// const readStream = fs.createReadStream('./docs/doc2.txt', {encoding: 'utf8'})
+// const writeStream = fs.createWriteStream('./docs/doc5.txt')
 
 
 // readStream.on('data', (chunk) => {
@@ -11,4 +11,6 @@ const writeStream = fs.createWriteStream('./docs/doc4.txt')
 //     writeStream.write(chunk)
 // })
 
-readStream.pipe(writeStream);
+// readStream.pipe(writeStream);
+
+
