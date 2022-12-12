@@ -8,9 +8,13 @@ app.set('view engine', 'ejs')
 app.listen(3000)
 
 app.get('/', (req, res) => {
-    // res.send('<p>Homepage</p>')
-    // res.sendFile('./doc2/index.ejs', {root: __dirname})
-    res.render('index' ,{title:'page'})
+    const blogs = [
+        {title:'Sam', snippet:'lorem ipsum lorem ipsumlorem ipsumlorem ipsum'},
+        {title:'Sean', snippet:'lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum'},
+        {title:'Sonny', snippet:'lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum'}
+    ]
+    // res.render('index' ,{title:'page'})
+    res.render('index', { title: 'Home', blogs }); 
 })
 
 app.get('/about', (req, res) => {
